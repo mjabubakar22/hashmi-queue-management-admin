@@ -43,14 +43,18 @@
 
         <!-- Manual Updates -->
         <h3>Manage Queue</h3>
-        <button id="markSeatedBtn">Mark as Seated</button>
-        <button id="removeNoShowBtn">Remove No-Show</button>
+        <div class="buttons">
+            <button id="markSeatedBtn">Mark as Seated</button>
+            <button id="removeNoShowBtn">Remove No-Show</button>
+        </div>
 
         <!-- Queue Overview -->
         <h3>Queue Overview</h3>
-        <p id="tablesAvailable">Tables Available: <strong>5</strong></p>
-        <p id="currentWaitTime">Current Wait Time: <strong>20 minutes</strong></p>
-        <p id="partiesWaiting">Parties Waiting: <strong>4</strong></p>
+        <div class="overview">
+            <p>Tables Available: <strong id="tablesAvailable">5</strong></p>
+            <p>Current Wait Time: <strong id="currentWaitTime">20 minutes</strong></p>
+            <p>Parties Waiting: <strong id="partiesWaiting">3</strong></p>
+        </div>
     </section>
 
     <footer>
@@ -61,3 +65,4 @@
     <script src="script.js" defer></script>
 </body>
 </html>
+
