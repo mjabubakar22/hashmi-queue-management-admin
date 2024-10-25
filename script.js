@@ -38,21 +38,26 @@ function displayQueue() {
 
 // Mark the first customer as seated
 document.getElementById('markSeatedBtn').addEventListener('click', function() {
-    queue.shift(); // Remove the first customer
-    queue.forEach((customer, index) => {
-        customer.position = index + 1; // Reassign positions
-    });
-    displayQueue();
+    if (queue.length > 0) {
+        queue.shift(); // Remove the first customer
+        queue.forEach((customer, index) => {
+            customer.position = index + 1; // Reassign positions
+        });
+        displayQueue();
+    }
 });
 
 // Remove the first customer as a no-show
 document.getElementById('removeNoShowBtn').addEventListener('click', function() {
-    queue.shift(); // Remove the first customer
-    queue.forEach((customer, index) => {
-        customer.position = index + 1; // Reassign positions
-    });
-    displayQueue();
+    if (queue.length > 0) {
+        queue.shift(); // Remove the first customer
+        queue.forEach((customer, index) => {
+            customer.position = index + 1; // Reassign positions
+        });
+        displayQueue();
+    }
 });
 
 // Initial display of the queue
 displayQueue();
+
