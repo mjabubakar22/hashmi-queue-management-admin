@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Management System - Admin Interface</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Admin Login Section -->
+    <section id="login-section">
+        <h1>Admin Access</h1>
+        <p>Please log in to access the queue management system.</p>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <div id="loginError" style="display: none;">
+            <p>Incorrect credentials. Please try again.</p>
+        </div>
+    </section>
+
+    <!-- Queue Management Section (Initially Hidden) -->
+    <section id="queue-management-section" style="display: none;">
+        <h2>Queue Management Interface</h2>
+        <p>Welcome, Admin! Manage the queue below.</p>
+
+        <!-- Real-Time Queue Display -->
+        <div id="queueDisplay">
+            <h3>Current Queue</h3>
+            <ul id="queueList">
+                <!-- Customers will be listed here dynamically -->
+            </ul>
+        </div>
+
+        <!-- Manual Updates -->
+        <h3>Manage Queue</h3>
+        <button id="markSeatedBtn">Mark as Seated</button>
+        <button id="removeNoShowBtn">Remove No-Show</button>
+
+        <!-- Queue Overview -->
+        <h3>Queue Overview</h3>
+        <p id="tablesAvailable">Tables Available: <strong>5</strong></p>
+        <p id="currentWaitTime">Current Wait Time: <strong>20 minutes</strong></p>
+        <p id="partiesWaiting">Parties Waiting: <strong>4</strong></p>
+    </section>
+
+    <footer>
+        <p>Hashmi Barbeque Restaurant | Admin Interface</p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
