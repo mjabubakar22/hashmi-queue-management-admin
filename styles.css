@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,10 +13,11 @@ header, footer {
     text-align: center;
 }
 
-h1, h2 {
-    color: #b22222; /* Dark red */
+h1, h2, h3 {
+    color: #b22222;
 }
 
+/* Section Styles */
 section {
     margin: 20px auto;
     padding: 20px;
@@ -25,6 +27,7 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Login Form Styles */
 form label, form input, form button {
     display: block;
     width: 100%;
@@ -45,6 +48,7 @@ form button {
     cursor: pointer;
 }
 
+/* Button Styles */
 button {
     padding: 10px;
     background-color: #333;
@@ -52,22 +56,29 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
 }
 
-#queue-management-section {
-    display: none; /* Initially hidden until login */
+.buttons {
+    margin-top: 10px;
 }
 
-ul {
+/* Queue Management Styles */
+#queueList {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+#queueList li {
     padding: 10px;
     margin: 10px 0;
     background-color: #e8e8e8;
     border-radius: 5px;
+}
+
+/* Queue Overview Styles */
+.overview {
+    margin-top: 20px;
 }
 
 footer {
@@ -76,3 +87,4 @@ footer {
     background-color: #333;
     color: white;
 }
+
